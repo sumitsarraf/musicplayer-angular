@@ -1,0 +1,11 @@
+<mat-card style="
+width: 50%;
+margin: 20px auto;
+text-align: center;
+">
+  <mat-form-field appearance="fill" style="width: 100%;">
+    <mat-label>Search your song</mat-label>
+    <input #str matInput placeholder="Search a song"
+      (change)="passQueryString(str.value)">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field></mat-card>
